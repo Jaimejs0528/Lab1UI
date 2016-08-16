@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="co.edu.udea.compumovil.grx.lab1ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/svFirst"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/LinLay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:onClick="OnClick"
+                    android:hint="@string/nombre"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:maxLength="@integer/maxLengthFirstName"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/txtApellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:onClick="OnClick"
+                    android:hint="@string/apellido"
+                    android:inputType="textCapSentences|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:maxLength="@integer/maxLengthLastName"
+                    android:singleLine="true" />
+
+                <RadioGroup
+                    android:id="@+id/rgGenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:inputType="none"
+                        android:textSize="20dp"
+                        android:text="@string/genero" />
+
+                    <RadioButton
+                        android:id="@+id/rbsexoM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:textColor="@color/text"
+                        android:checked="true"
+                        android:text="@string/sexoM" />
+
+                    <RadioButton
+                        android:id="@+id/rbsexoF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:textColor="@color/text"
+                        android:text="@string/sexoF" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:translationY="10dp"
+                    android:textSize="24dp"
+                    android:text="@string/feNaci" />
+
+                <co.edu.udea.compumovil.grx.lab1ui.CustomDatePicker
+                    android:id="@+id/dpFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:calendarViewShown="false"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:descendantFocusability="blocksDescendants"
+                    android:focusable="false" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCountries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:inputType="textNoSuggestions"
+                    android:hint="@string/pais"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/txtTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:onClick="OnClick"
+                    android:hint="@string/telefono"
+                    android:inputType="phone|textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:maxLength="@integer/maxLengthNumber"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/txtDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:onClick="OnClick"
+                    android:hint="@string/direccion"
+                    android:inputType="textNoSuggestions"
+                    android:imeOptions="actionNext"
+                    android:maxLength="@integer/maxLengthAddress"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/txtcorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:onClick="OnClick"
+                    android:hint="@string/correo"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"
+                    android:maxLength="@integer/maxLengthEmail"
+                    android:singleLine="true" />
+
+
+                <!--<TextView
+                    android:id="@+id/txthobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>-->
+
+                <LinearLayout
+                    android:id="@+id/llContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txthobbies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:translationY="10dp"
+                        android:textSize="24dp"
+                        android:text="@string/hobbies" />
+
+                    <LinearLayout
+                        android:id="@+id/lnHobbies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spHobbies"
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content">
+
+                        </Spinner>
+
+                        <ImageButton
+                            android:id="@+id/btnAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginLeft="@dimen/button_margin_horizontal"
+                            android:layout_marginRight="@dimen/button_margin_horizontal"
+                            android:layout_gravity="center"
+                            android:onClick="OnClick"
+                            android:textSize="11sp"
+                            android:tag="@string/agregar"
+                            android:src="@drawable/ic_add_circle_outline_black_24dp"></ImageButton>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtfavs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:textAlignment="center"
+                        android:inputType="none"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:visibility="gone"
+                        android:translationY="10dp"
+                        android:textSize="24dp"
+                        android:text="@string/favoritos" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/contactoFav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contactoFav"
+                    android:textColor="@color/text"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnClick"
+            android:text="@string/mostrar"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+        <ScrollView
+            android:id="@+id/scrlText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnShow">
+
+            <TextView
+                android:id="@+id/salida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:visibility="gone" />
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
