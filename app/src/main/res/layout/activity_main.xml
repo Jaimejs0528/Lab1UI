@@ -227,7 +227,7 @@
                         android:focusableInTouchMode="false"
                         android:visibility="gone"
                         android:translationY="10dp"
-                        android:textSize="24dp"
+                        android:textSize="24sp"
                         android:text="@string/favoritos" />
 
                 </LinearLayout>
@@ -259,8 +259,8 @@
             android:onClick="OnClick"
             android:text="@string/mostrar"
             android:textColor="@color/colorPrimaryDark"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
 
         <ScrollView
             android:id="@+id/scrlText"
