@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Lab1UI</string>
+    <integer name="maxLengthFirstName">25</integer>
+    <integer name="maxLengthLastName">35</integer>
+    <integer name="maxLengthNumber">15</integer>
+    <integer name="maxLengthAddress">45</integer>
+    <integer name="maxLengthEmail">40</integer>
+    <string name="mensajeP">País Invalido</string>
+    <string name="mensajeSp1">Selecciona un Hobbie</string>
+    <string name="mensajeSp2">Hobbie Repetido</string>
+    <string name="mensajeSp3">Agregado(a)</string>
+    <string name="mensajeCampos">Campos Requeridos</string>
+    <string name="mensajeEmail">Formato de correo invalido</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="salida">Datos de Contacto:</string>
+    <string name="dateFormat">MMMM dd, yyyy</string>
+    <string name="mensajeContactoFav">Es Favorito</string>
+    <string name="mensajeMostrar">Monstrando Datos</string>
+
+    <string name="requeridoNom">Nombre(s) *</string>
+    <string name="requeridoPais">Pais *</string>
+    <string name="requeridoTel">Teléfono *</string>
+    <string name="requeridoEmail">Correo Electronico *</string>
+
+    <string name="nombre">Nombre(s)</string>
+    <string name="apellido">Apellido(s)</string>
+    <string name="genero">Genero</string>
+    <string name="sexoM">Masculino</string>
+    <string name="sexoF">Femenino</string>
+    <string name="pais2">País</string>
+    <string name="feNaci">Fecha de Nacimiento</string>
+    <string-array name="paises">
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Haití</item>
+        <item>Honduras</item>
+        <item>Mexico</item>
+        <item>Nicaragua</item>
+        <item>Panamá</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>República Dominicana</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+    <string name="telefono">Teléfono</string>
+    <string name="direccion">dirección</string>
+    <string name="correo">Correo Electrónico</string>
+    <string name="agregar">Agregar</string>
+    <string name="contactoFav">Contacto Favorito</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="favoritos">Hobbies Favoritos</string>
+    <string-array name="hobbies">
+        <item>Seleccione un Hobbie</item>
+        <item>Acampar</item>
+        <item>Actuar</item>
+        <item>Anime</item>
+        <item>Bailar</item>
+        <item>Baloncesto</item>
+        <item>Caminar</item>
+        <item>Comer</item>
+        <item>Dormir</item>
+        <item>Escribir</item>
+        <item>Futbol</item>
+        <item>Nadar</item>
+        <item>Leer</item>
+        <item>Ping Pong</item>
+        <item>Series Televisivas</item>
+        <item>Tenis</item>
+        <item>viajar</item>
+        <item>VidoJuegos</item>
+    </string-array>
+</resources>

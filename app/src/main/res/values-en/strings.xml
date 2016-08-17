@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab1UI</string>
+    <string name="apellido">Last Name</string>
+    <string name="correo">E-mail</string>
+    <string name="direccion">Address</string>
+    <string name="feNaci">Date of Birth</string>
+    <string name="genero">Gender</string>
+    <string name="mensajeP">Invalid Country</string>
+    <string name="mensajeSp1">Select a hobby</string>
+    <string name="nombre">First Name</string>
+    <string name="sexoF">Female</string>
+    <string name="sexoM">Male</string>
+    <string name="telefono">Phone</string>
+    <string name="agregar">Add</string>
+    <string-array name="hobbies">
+        <item>Select a Hobbie</item>
+        <item>Act</item>
+        <item>Anime</item>
+        <item>BasketBall</item>
+        <item>Camp</item>
+        <item>Dance</item>
+        <item>Eat</item>
+        <item>FootBall</item>
+        <item>Read</item>
+        <item>Sleep</item>
+        <item>Swin</item>
+        <item>Ping Pong</item>
+        <item>Tennis</item>
+        <item>Travel</item>
+        <item>T.V. Series</item>
+        <item>VideoGames</item>
+        <item>Walk</item>
+        <item>Write</item>
+    </string-array>
+    <string name="mensajeSp2">Hobby Repeted</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="favoritos">Favorite hobbies</string>
+    <string name="mensajeSp3">Added</string>
+    <string name="mostrar">Show</string>
+    <string name="mensajeEmail">Invalid email format</string>
+    <string name="mensajeCampos">Required Camps</string>
+    <string name="pais2">Country</string>
+    <string name="salida">Contact Info:</string>
+    <string name="dateFormat">dd MMMM, yyyy</string>
+    <string name="contactoFav">Favorite Contact</string>
+    <string name="mensajeContactoFav">Is Favorite</string>
+    <string name="requeridoTel">Phone *</string>
+    <string name="requeridoEmail">E-mail *</string>
+    <string name="requeridoPais">Country *</string>
+    <string name="requeridoNom">First Name *</string>
+    <string name="mensajeMostrar">Showing Info</string>
+</resources>
